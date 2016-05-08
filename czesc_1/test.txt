@@ -1,0 +1,19 @@
+#!/bin/bash
+
+a=( 1 10 2 3 8 9 3 11)
+b=( 2 12 4 6 41 30 7 3)
+c=( 3 3 6 3 4 1 23 7)
+d=( 4 14 1 1 8 6 2 3)
+e=( 5 50 2 19 2 4 2 0)
+f=( 6 16 1 74 2 3 1 8)
+v=( 1 1 1 0 0 0 1 0 )
+
+for x in `seq 0 7`; do
+  res=`./first_of_all ${a[$x]} ${b[$x]} ${c[$x]} ${d[$x]} ${e[$x]} ${f[$x]}}`
+  if [ "$res" != "${v[x]}" ]
+  then
+    echo "input" ${a[$x]} ${b[$x]} ${c[$x]} ${d[$x]} ${e[$x]} ${f[$x]}} 
+    echo "output actual" $res
+    echo "output expected" ${v[$x]}
+  fi
+done
