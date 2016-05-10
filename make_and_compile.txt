@@ -1,0 +1,6 @@
+Grę kompilujemy poleceniem g++ -o overdose overdose.cpp
+
+Uruchamiamy ją poleceniem:
+./overdose not.txt or.txt impl.txt and.txt
+
+Kolejnosc nazw plików nie jest istotna ale już ich nazwy tak.
