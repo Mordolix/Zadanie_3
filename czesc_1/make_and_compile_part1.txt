@@ -1,0 +1,15 @@
+Program z pierwszej czesci kompilujemy poleceniem g++ -o first_of_all first_of_all.cpp
+
+Uruchamiamy ją poleceniem:
+./first_of_all
+
+Negacje podobnie:
+ g++ -o negation negation.cpp
+
+Uruchamiamy ją poleceniem:
+./negation
+
+do programu mozna podac dowolna ilosc zmiennych o ile jest ich wiecej od 5 ale i tak wykorzystuje tylko 6.
+
+skrypt w bahu uruchamiamy ./test
+
